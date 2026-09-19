@@ -190,6 +190,34 @@ filterBtns.forEach((btn) => {
 });
 
 // ===================================================
+// CERTIFICATE PREVIEW (full-size dialog)
+// ===================================================
+const certOpen = document.getElementById('certOpen');
+const certDialog = document.getElementById('certDialog');
+
+if (certOpen && certDialog) {
+  const certFull = document.getElementById('certFull');
+  const certClose = document.getElementById('certClose');
+
+  certOpen.addEventListener('click', () => {
+    // Load the large image only when it's first needed.
+    if (!certFull.getAttribute('src')) certFull.setAttribute('src', certFull.dataset.src);
+    if (typeof certDialog.showModal === 'function') {
+      certDialog.showModal();
+    } else {
+      window.open(certFull.dataset.src, '_blank', 'noopener');
+    }
+  });
+
+  certClose.addEventListener('click', () => certDialog.close());
+
+  // Clicking the dimmed backdrop (the dialog element itself) closes it.
+  certDialog.addEventListener('click', (e) => {
+    if (e.target === certDialog) certDialog.close();
+  });
+}
+
+// ===================================================
 // TESTIMONIAL CAROUSEL
 // ===================================================
 const track = document.getElementById('testimonialTrack');

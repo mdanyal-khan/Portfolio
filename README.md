@@ -1,111 +1,145 @@
+<div align="center">
+
 # MDK Portfolio
 
-Personal portfolio website of **Muhammad Danyal Khan** — a Software Engineering student at Iqra National University, Peshawar, showcasing skills, education, and projects in Flutter, Python, and C++ development.
+### A focused, responsive portfolio for software engineering and Flutter development
 
-**Live site:** [_mdanyal.page.gd_](https://mdanyal.page.gd/)
+[![Live Website](https://img.shields.io/badge/Live%20Website-mdanyal.page.gd-0f766e?style=for-the-badge)](https://mdanyal.page.gd/)
+[![GitHub](https://img.shields.io/badge/GitHub-mdanyal--khan-111827?style=for-the-badge&logo=github)](https://github.com/mdanyal-khan)
+[![Built With](https://img.shields.io/badge/Built%20With-HTML%20%7C%20CSS%20%7C%20JavaScript-e11d48?style=for-the-badge)](#technology-stack)
 
----
+**[View the live portfolio](https://mdanyal.page.gd/)**
+
+</div>
 
 ## About
 
-This repository contains the source code for a single-page, responsive portfolio website. It's built with plain HTML, CSS, and JavaScript — no frameworks or build tools required — and is designed to present:
+MDK Portfolio is the personal website of **Muhammad Danyal Khan**, a Software Engineering student and Flutter developer based in Khyber Pakhtunkhwa, Pakistan.
 
-- A brief professional background and academic stats
-- Technical skills with visual proficiency indicators
-- Educational timeline
-- A filterable showcase of projects
-- Services offered
-- FAQs and testimonials
-- A working contact form
+It brings professional background, technical skills, education, selected projects, certifications, services, testimonials, and contact information into one polished single-page experience.
 
-## Features
+> A fast, accessible, and maintainable portfolio built with the web platform itself: semantic HTML, custom CSS, and vanilla JavaScript.
 
-- 🎨 **Dark/light theme toggle** with a clean, modern design
-- 📱 **Fully responsive** layout for desktop, tablet, and mobile
-- 🧭 **Sticky navigation** with scroll-spy highlighting for the active section
-- 🗂️ **Filterable project gallery** (Flutter, Python, C++, Academic)
-- 📊 **Animated skill proficiency rings** and stat counters
-- 📩 **Contact form** powered by [Formspree](https://formspree.io/)
-- ⬆️ **Back-to-top** button and smooth scroll behavior
-- 🔍 **SEO-ready** with meta tags, sitemap, and structured data (JSON-LD)
-- 🖼️ Custom favicons, app icons, and Open Graph image for social sharing
+## Contents
 
-## Tech Stack
+- [Highlights](#highlights)
+- [Technology Stack](#technology-stack)
+- [Project Structure](#project-structure)
+- [Run Locally](#run-locally)
+- [Deploy](#deploy)
+- [Customize](#customize)
+- [Contact](#contact)
+- [License](#license)
 
-| Layer      | Technology                     |
-|------------|---------------------------------|
-| Markup     | HTML5                           |
-| Styling    | CSS3 (custom properties, no framework) |
-| Behavior   | Vanilla JavaScript (ES6+)       |
-| Forms      | Formspree                       |
-| Hosting    | Static hosting (GitHub Pages / infinity free / mdanyal.page.gd) |
+## Highlights
+
+| Experience | Details |
+| --- | --- |
+| Responsive design | Works across desktop, tablet, and mobile screens |
+| Theme support | Light and dark modes with a persistent preference |
+| Project discovery | Filterable Flutter, AI and Python, and web project gallery |
+| Professional profile | Skills, education, certification, services, FAQs, and testimonials |
+| Contact workflow | Formspree-powered contact form with validation and feedback |
+| Search visibility | Metadata, sitemap, robots rules, Open Graph, and JSON-LD |
+| Performance | No framework, build pipeline, or package installation required |
+
+## Technology Stack
+
+| Area | Technology |
+| --- | --- |
+| Structure | HTML5 |
+| Styling | Custom CSS3 and CSS custom properties |
+| Interactivity | Vanilla JavaScript (ES6+) |
+| Typography | Manrope, Space Grotesk, and JetBrains Mono |
+| Contact form | [Formspree](https://formspree.io/) |
+| Hosting | Static hosting |
 
 ## Project Structure
 
-```
-MDK_Portfolio/
-├── assets/                # Images, icons, favicons, and resume (CV)
-│   ├── android-chrome-*.png
-│   ├── apple-touch-icon.png
-│   ├── cv.pdf
-│   ├── favicon*.png / .ico
-│   ├── og-image.jpg
-│   └── profile.png / .webp
-├── index.html              # Main HTML page (all sections)
-├── styles.css               # Global styles and theming
-├── script.js                 # Interactivity: nav, theme, filters, form, animations
-├── site.webmanifest           # PWA manifest
-├── sitemap.xml                 # SEO sitemap
-├── robots.txt                   # Search engine crawl rules
-└── README.md
+```text
+.
+├── assets/                 # Images, icons, certificate, CV, and social assets
+├── index.html              # Page content, metadata, and structured data
+├── styles.css              # Layout, components, themes, and responsive styles
+├── script.js               # Navigation, theme, filters, animations, and form logic
+├── site.webmanifest        # Web app metadata
+├── sitemap.xml             # Search engine sitemap
+├── robots.txt              # Crawler directives
+└── README.md               # Project documentation
 ```
 
-## Getting Started
+## Run Locally
 
-No build process is required — this is a static site.
+There are no dependencies to install and no build step.
 
-### Run locally
+### 1. Clone the repository
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/mdanyal-khan/MDK_Portfolio.git
-   cd MDK_Portfolio
-   ```
-2. Open `index.html` directly in your browser, **or** serve it locally for the best experience (recommended, so relative paths and manifest load correctly):
-   ```bash
-   # Using Python
-   python3 -m http.server 8000
+```bash
+git clone https://github.com/mdanyal-khan/Portfolio.git
+cd Portfolio
+```
 
-   # Or using Node's http-server
-   npx http-server .
-   ```
-3. Visit `http://localhost:8000` in your browser.
+### 2. Start a local server
 
-### Deployment
+Using Python:
 
-Being a static site, it can be deployed to any static hosting provider, for example:
+```bash
+python -m http.server 8000
+```
 
-- **GitHub Pages** — enable Pages in the repository settings and point it to the `main` branch.
-- **Netlify / Vercel** — import the repository and deploy with default static site settings (no build command needed).
+Or using Node.js:
 
-## Customization
+```bash
+npx http-server .
+```
 
-- **Contact form:** Update the `action` URL in the `<form id="contactForm">` element in `index.html` with your own [Formspree](https://formspree.io/) endpoint (or another form backend).
-- **Projects:** Add or edit entries inside the `<ul class="projects-grid">` section in `index.html`, using the existing `data-category` values (`flutter`, `python`, `cpp`, `academic`) to keep filtering working.
-- **Skills:** Adjust proficiency by editing the `--proficiency` CSS variable on each `.skill-card`.
-- **Theme colors:** Modify the CSS custom properties defined at the top of `styles.css`.
+### 3. Open the portfolio
+
+Visit [http://localhost:8000](http://localhost:8000) in your browser.
+
+Opening `index.html` directly also works, but a local server provides the most reliable behavior for relative assets and the web manifest.
+
+## Deploy
+
+The repository root can be published directly to any static hosting provider. No build command is needed.
+
+Suitable options include:
+
+- GitHub Pages
+- Netlify
+- Vercel
+- Conventional shared static hosting
+
+After changing the public domain, update the canonical URL, Open Graph URLs, structured data, `sitemap.xml`, and `robots.txt` together.
+
+## Customize
+
+| To change | Update |
+| --- | --- |
+| Contact destination | The `action` attribute on `#contactForm` in `index.html` |
+| Portfolio projects | Cards inside `.projects-grid`; use `flutter`, `ai`, or `web` categories |
+| Private projects | The existing private-repository treatment in `index.html` |
+| Skill levels | The `--proficiency` value on the relevant skill card |
+| Colors and themes | CSS custom properties at the beginning of `styles.css` |
+| SEO and sharing | Page metadata, JSON-LD, `sitemap.xml`, and `robots.txt` |
 
 ## Contact
 
-- **Email:** [mdanyal.khan42@gmail.com](mailto:mdanyal.khan42@gmail.com)
-- **LinkedIn:** [Muhammad Danyal](https://www.linkedin.com/in/muhammad-danyal-5564a7376/)
-- **GitHub:** [@mdanyal-khan](https://github.com/mdanyal-khan)
-- **WhatsApp:** [+92 313 9709274](https://wa.me/923139709274)
+| Channel | Link |
+| --- | --- |
+| Email | [mdanyal.khan42@gmail.com](mailto:mdanyal.khan42@gmail.com) |
+| LinkedIn | [/mdanyal-khan](https://www.linkedin.com/in/mdanyal-khan/) |
+| GitHub | [@mdanyal-khan](https://github.com/mdanyal-khan) |
+| WhatsApp | [+92 313 9709274](https://wa.me/923139709274) |
 
 ## License
 
-This project is currently unlicensed. If you'd like others to be free to reuse or adapt this portfolio template, consider adding an open-source license such as [MIT](https://choosealicense.com/licenses/mit/).
+No open-source license is currently included. All rights remain with Muhammad Danyal Khan unless stated otherwise.
+
+<div align="center">
 
 ---
 
-<p align="center">Designed & built by Muhammad Danyal Khan</p>
+Designed and built by **Muhammad Danyal Khan**.
+
+</div>

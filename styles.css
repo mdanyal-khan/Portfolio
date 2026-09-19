@@ -1230,9 +1230,14 @@ ul, ol { list-style: none; }
 }
 
 .project-thumb {
-  height: 180px;
+  height: 140px;
   position: relative;
   overflow: hidden;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 8px;
+  padding: 14px;
   transition: transform var(--transition-base);
 }
 
@@ -1254,8 +1259,17 @@ ul, ol { list-style: none; }
   transform: scale(1.04);
 }
 
+.project-card article {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
 .project-body {
   padding: 24px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
 }
 
 .project-title {
@@ -1273,6 +1287,7 @@ ul, ol { list-style: none; }
 
 .project-tags {
   display: flex;
+  flex-wrap: wrap;
   gap: 8px;
   margin-bottom: 18px;
 }
@@ -1280,6 +1295,7 @@ ul, ol { list-style: none; }
 .project-links {
   display: flex;
   gap: 10px;
+  margin-top: auto;
 }
 
 .link-btn {
@@ -1795,4 +1811,247 @@ ul, ol { list-style: none; }
 
 @media (max-width: 640px) {
   .faq-item { padding: 22px 20px; }
+}
+/* ===================================================
+   PROJECT BADGES + PRIVATE REPOS
+=================================================== */
+.project-badge {
+  position: relative;
+  z-index: 1;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 4px 11px;
+  border-radius: 999px;
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  font-weight: 500;
+  color: #fff;
+  background: rgba(15, 23, 42, 0.45);
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+.project-badge-private {
+  background: rgba(255, 255, 255, 0.92);
+  border-color: transparent;
+  color: #1E1B4B;
+}
+
+.link-btn-private {
+  color: var(--color-text-muted);
+  border-style: dashed;
+  cursor: default;
+}
+
+/* ===================================================
+   CERTIFICATES
+=================================================== */
+.cert-card {
+  display: grid;
+  grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr);
+  gap: 44px;
+  align-items: center;
+  max-width: 1040px;
+  margin: 0 auto;
+  padding: 32px;
+  border-radius: var(--radius-lg);
+  background: var(--color-surface);
+  border: 1px solid var(--color-surface-border);
+  backdrop-filter: blur(16px) saturate(150%);
+  -webkit-backdrop-filter: blur(16px) saturate(150%);
+}
+
+.cert-preview {
+  position: relative;
+  display: block;
+  width: 100%;
+  padding: 0;
+  overflow: hidden;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--color-surface-border);
+  background: #fff;
+  cursor: zoom-in;
+  box-shadow: var(--shadow-card);
+  transition: transform var(--transition-base), box-shadow var(--transition-base);
+}
+
+.cert-preview img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.cert-preview:hover,
+.cert-preview:focus-visible {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-glow);
+}
+
+.cert-zoom {
+  position: absolute;
+  right: 12px;
+  bottom: 12px;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 7px 13px;
+  border-radius: 999px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: #fff;
+  background: rgba(15, 23, 42, 0.72);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+.cert-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 5px 13px;
+  border-radius: 999px;
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  font-weight: 500;
+  color: var(--color-secondary);
+  background: rgba(6, 182, 212, 0.12);
+  border: 1px solid rgba(6, 182, 212, 0.3);
+}
+
+.cert-title {
+  font-family: var(--font-display);
+  font-size: clamp(1.4rem, 2.6vw, 1.85rem);
+  font-weight: 700;
+  line-height: 1.2;
+  margin: 16px 0 6px;
+}
+
+.cert-issuer {
+  color: var(--color-accent);
+  font-weight: 600;
+  font-size: 0.95rem;
+  margin-bottom: 14px;
+}
+
+.cert-desc {
+  color: var(--color-text-muted);
+  font-size: 0.95rem;
+  margin-bottom: 20px;
+}
+
+.cert-meta {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.cert-meta dt {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--color-secondary);
+  letter-spacing: 0.04em;
+}
+
+.cert-meta dd {
+  margin: 4px 0 0;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.cert-meta .cert-id {
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  overflow-wrap: anywhere;
+}
+
+.cert-tags {
+  margin-bottom: 24px;
+}
+
+.cert-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.cert-actions .link-btn {
+  flex: 1 1 160px;
+}
+
+/* Full-size preview dialog */
+.cert-dialog {
+  width: min(94vw, 1300px);
+  max-width: none;
+  max-height: none;
+  height: fit-content;
+  margin: auto; /* the site-wide reset zeroes the default centering */
+  padding: 0;
+  border: 0;
+  background: transparent;
+  overflow: visible;
+  color: inherit;
+}
+
+.cert-dialog::backdrop {
+  background: rgba(2, 6, 23, 0.85);
+  backdrop-filter: blur(4px);
+}
+
+.cert-dialog img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 88vh;
+  object-fit: contain;
+  border-radius: var(--radius-sm);
+  background: #fff;
+}
+
+.cert-dialog-close {
+  position: absolute;
+  top: -16px;
+  right: -8px;
+  z-index: 2;
+  display: grid;
+  place-items: center;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  color: var(--color-text);
+  background: var(--color-bg);
+  border: 1px solid var(--color-surface-border);
+  box-shadow: var(--shadow-card);
+  cursor: pointer;
+}
+
+.cert-dialog-close:hover {
+  border-color: var(--color-secondary);
+}
+
+body:has(dialog[open]) {
+  overflow: hidden;
+}
+
+@media (max-width: 860px) {
+  .cert-card {
+    grid-template-columns: 1fr;
+    gap: 28px;
+    padding: 22px;
+  }
+}
+
+@media (max-width: 640px) {
+  .project-thumb { height: 120px; }
+  .cert-meta { grid-template-columns: 1fr; gap: 12px; }
+  .cert-dialog-close { top: -18px; right: 4px; }
+}
+
+/* Nine nav links: tighten spacing on mid-size desktops so they never crowd the logo */
+@media (min-width: 969px) and (max-width: 1240px) {
+  .nav-inner { padding-left: 22px; padding-right: 22px; }
+  .nav-links { gap: 16px; }
+  .nav-link { font-size: 0.9rem; }
 }

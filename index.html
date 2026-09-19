@@ -13,7 +13,7 @@
 <meta name="author" content="Muhammad Danyal Khan">
 <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
 <link rel="canonical" href="https://mdanyal.page.gd/">
-<meta property="article:modified_time" content="2026-07-14">
+<meta property="article:modified_time" content="2026-09-19">
 
 <!-- Favicons / Icons -->
 <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
@@ -93,7 +93,17 @@
       "alternateName": "INU"
     }
   ],
-  "knowsAbout": ["Flutter", "Dart", "Python", "C++", "Data Structures and Algorithms", "Software Design", "Mobile App Development", "Flutter development in Charsadda", "Flutter development in Peshawar", "Flutter development in KPK"],
+  "hasCredential": {
+    "@type": "EducationalOccupationalCredential",
+    "name": "Generative AI Application Developer Certificate",
+    "credentialCategory": "certificate",
+    "recognizedBy": {
+      "@type": "Organization",
+      "name": "UETIANS Lahore Endowment Foundation, USA"
+    },
+    "url": "https://mdanyal.page.gd/#certificates"
+  },
+  "knowsAbout": ["Flutter", "Dart", "Python", "C++", "Generative AI", "LangChain", "Retrieval-Augmented Generation (RAG)", "FastAPI", "Data Structures and Algorithms", "Software Design", "Mobile App Development", "Flutter development in Charsadda", "Flutter development in Peshawar", "Flutter development in KPK"],
   "sameAs": [
     "https://github.com/mdanyal-khan",
     "https://www.linkedin.com/in/muhammad-danyal-5564a7376/"
@@ -109,7 +119,7 @@
   "name": "Muhammad Danyal Khan (MDK) Portfolio",
   "url": "https://mdanyal.page.gd/",
   "inLanguage": "en",
-  "dateModified": "2026-07-14",
+  "dateModified": "2026-09-19",
   "author": { "@type": "Person", "name": "Muhammad Danyal Khan" },
   "speakable": {
     "@type": "SpeakableSpecification",
@@ -130,6 +140,100 @@
       "position": 1,
       "item": {
         "@type": "SoftwareApplication",
+        "name": "DanixPOS",
+        "applicationCategory": "BusinessApplication",
+        "operatingSystem": "Android, Windows",
+        "description": "An enterprise ERP and Point of Sale ecosystem built with Flutter. It features AES-256 SQLCipher database security, real-time LAN sync, and a background reporting engine."
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "item": {
+        "@type": "SoftwareApplication",
+        "name": "RideHisab",
+        "applicationCategory": "FinanceApplication",
+        "operatingSystem": "Android",
+        "description": "An offline-first finance tracker for rideshare drivers (inDrive, Uber, Yango). It logs rides, income, tips, expenses, and platform commissions locally with SQLite, shows day, week, and month dashboards, and offers optional Google Drive backup and restore.",
+        "url": "https://github.com/mdanyal-khan/ride_hisab"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "item": {
+        "@type": "SoftwareApplication",
+        "name": "HRMS N8N",
+        "applicationCategory": "BusinessApplication",
+        "operatingSystem": "Android, Web, Windows",
+        "description": "An adaptive Flutter and Dart client that recreates an HR automation platform across mobile, web, and desktop, integrated with Supabase for role-based (RBAC) authentication and database storage."
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 4,
+      "item": {
+        "@type": "SoftwareApplication",
+        "name": "FindBack AI",
+        "applicationCategory": "UtilitiesApplication",
+        "operatingSystem": "Web",
+        "description": "A Streamlit lost-and-found platform for campuses and organizations. Users report lost or found items and AI-powered semantic and rule-based similarity scoring suggests likely matches, with claim review, a handover workflow, and role-based access.",
+        "url": "https://github.com/mdanyal-khan/findbackAI"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 5,
+      "item": {
+        "@type": "SoftwareApplication",
+        "name": "Smart Document Analyzer",
+        "applicationCategory": "UtilitiesApplication",
+        "operatingSystem": "Web",
+        "description": "A Streamlit app built on LangChain Expression Language and Groq's Llama 3.3 70B. Upload a PDF or TXT file and one parallel pipeline generates a summary, key points, keywords, a title, sentiment analysis, and an auto-scored quiz.",
+        "url": "https://github.com/mdanyal-khan/smart_document_analyzer"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 6,
+      "item": {
+        "@type": "SoftwareApplication",
+        "name": "AI Chatbot",
+        "applicationCategory": "UtilitiesApplication",
+        "operatingSystem": "Web",
+        "description": "A Streamlit chatbot built with LangChain and the Hugging Face Inference API, switchable between Qwen 2.5 (7B) and Llama 3.1 (8B). It supports streaming, conversation memory, adjustable generation settings, chat export, and clear error handling.",
+        "url": "https://github.com/mdanyal-khan/AI_Chatbot"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 7,
+      "item": {
+        "@type": "SoftwareApplication",
+        "name": "Resume Info Extractor",
+        "applicationCategory": "UtilitiesApplication",
+        "operatingSystem": "Web",
+        "description": "Extracts structured, schema-validated data from PDF resumes using Qwen2.5-7B-Instruct, LangChain, and Pydantic. It runs locally or through the Hugging Face Inference API and exports results as JSON, CSV, or a text report.",
+        "url": "https://github.com/mdanyal-khan/resume_info_extractor"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 8,
+      "item": {
+        "@type": "SoftwareApplication",
+        "name": "PDF RAG Chatbot",
+        "applicationCategory": "UtilitiesApplication",
+        "operatingSystem": "Web",
+        "description": "A Streamlit app to upload a PDF and ask questions about it. A LangChain RAG pipeline pairs local MiniLM sentence-transformer embeddings and a Chroma vector store with Qwen2.5-7B-Instruct served through Hugging Face.",
+        "url": "https://github.com/mdanyal-khan/simple_pdf_rag_chatbot"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 9,
+      "item": {
+        "@type": "SoftwareApplication",
         "name": "Task Manager App",
         "applicationCategory": "MobileApplication",
         "operatingSystem": "Android",
@@ -139,7 +243,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 2,
+      "position": 10,
       "item": {
         "@type": "SoftwareApplication",
         "name": "BMI Calculator App",
@@ -191,6 +295,7 @@
       <li><a href="#about" class="nav-link">About</a></li>
       <li><a href="#skills" class="nav-link">Skills</a></li>
       <li><a href="#education" class="nav-link">Education</a></li>
+      <li><a href="#certificates" class="nav-link">Certificates</a></li>
       <li><a href="#projects" class="nav-link">Projects</a></li>
       <li><a href="#services" class="nav-link">Services</a></li>
       <li><a href="#contact" class="nav-link">Get in Touch</a></li>
@@ -214,6 +319,7 @@
   <a href="#about" class="nav-link">About</a>
   <a href="#skills" class="nav-link">Skills</a>
   <a href="#education" class="nav-link">Education</a>
+  <a href="#certificates" class="nav-link">Certificates</a>
   <a href="#projects" class="nav-link">Projects</a>
   <a href="#services" class="nav-link">Services</a>
   <a href="#contact" class="nav-link">Message Me</a>
@@ -469,19 +575,238 @@
   </div>
 </section>
 
+<!-- Certificates Section -->
+<section id="certificates" class="section section-alt">
+  <div class="section-inner">
+    <div class="section-header reveal">
+      <span class="eyebrow">Credentials</span>
+      <h2 class="section-title">Certifications</h2>
+    </div>
+    <article class="cert-card reveal">
+      <button type="button" class="cert-preview" id="certOpen" aria-haspopup="dialog" aria-label="View the full-size Generative AI Application Developer Certificate">
+        <picture>
+          <source srcset="assets/certificate-genai-thumb.webp" type="image/webp">
+          <img src="assets/certificate-genai-thumb.jpg" alt="Generative AI Application Developer Certificate awarded to Muhammad Danyal by UETIANS Lahore Endowment Foundation" width="900" height="695" loading="lazy">
+        </picture>
+        <span class="cert-zoom" aria-hidden="true"><svg aria-hidden="true" focusable="false" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.35-4.35M11 8v6M8 11h6"/></svg>View full size</span>
+      </button>
+      <div class="cert-body">
+        <span class="cert-badge"><svg aria-hidden="true" focusable="false" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="6"/><path d="M15.48 12.89L17 22l-5-3-5 3 1.52-9.11"/></svg>Top Performer</span>
+        <h3 class="cert-title">Generative AI Application Developer Certificate</h3>
+        <p class="cert-issuer">UETIANS Lahore Endowment Foundation, USA</p>
+        <p class="cert-desc">
+          Awarded on successful completion of the NCEAC &ndash; HEC Generative AI Training (Oct &ndash; Nov 2025),
+          offered in collaboration with NCEAC, HEC, Pak Angels, iCode Guru, and Aspire Pakistan.
+        </p>
+        <dl class="cert-meta">
+          <div>
+            <dt>Issue date</dt>
+            <dd><time datetime="2025-12-20">20 December 2025</time></dd>
+          </div>
+          <div>
+            <dt>Certificate ID</dt>
+            <dd class="cert-id">6673e83822e1fb49</dd>
+          </div>
+        </dl>
+        <ul class="timeline-tags cert-tags">
+          <li class="tag">Generative AI</li>
+          <li class="tag">NCEAC</li>
+          <li class="tag">HEC</li>
+        </ul>
+        <div class="cert-actions">
+          <a href="https://quiz.ideagist.com/ideagist-certificate?cert_hash=6673e83822e1fb49" class="link-btn link-btn-primary" target="_blank" rel="noopener noreferrer">Verify Certificate</a>
+          <a href="assets/Generative-AI-Certificate.pdf" class="link-btn" download>Download PDF</a>
+        </div>
+      </div>
+    </article>
+  </div>
+
+  <dialog class="cert-dialog" id="certDialog" aria-label="Generative AI Application Developer Certificate, full size">
+    <button type="button" class="cert-dialog-close" id="certClose" aria-label="Close certificate preview"><svg aria-hidden="true" focusable="false" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M18 6L6 18M6 6l12 12"/></svg></button>
+    <img id="certFull" data-src="assets/certificate-genai.jpg" alt="Generative AI Application Developer Certificate awarded to Muhammad Danyal, issued 20 December 2025, certificate ID 6673e83822e1fb49" width="2000" height="1545">
+  </dialog>
+</section>
+
 <!-- Projects Section -->
-<section id="projects" class="section section-alt">
+<section id="projects" class="section">
   <div class="section-inner">
     <div class="section-header reveal">
       <span class="eyebrow">Selected Work</span>
       <h2 class="section-title">Projects</h2>
+      <p class="section-subtitle">Flutter apps, AI tools, and full-stack work. Two projects live in private repositories, so their code isn't linked.</p>
     </div>
     <div class="filter-bar reveal" role="group" aria-label="Filter projects by category">
+      <button type="button" class="filter-btn active" data-filter="all" aria-pressed="true">All</button>
+      <button type="button" class="filter-btn" data-filter="flutter" aria-pressed="false">Flutter</button>
+      <button type="button" class="filter-btn" data-filter="ai" aria-pressed="false">AI &amp; Python</button>
+      <button type="button" class="filter-btn" data-filter="web" aria-pressed="false">Web</button>
     </div>
     <ul class="projects-grid">
       <li class="project-card reveal" data-category="flutter">
         <article>
-          <div class="project-thumb project-thumb-4" role="img" aria-label="Task Manager App preview"></div>
+          <div class="project-thumb project-thumb-1" aria-hidden="true"><span class="project-badge">Flutter</span><span class="project-badge project-badge-private"><svg aria-hidden="true" focusable="false" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V7a4 4 0 018 0v4"/></svg>Private</span></div>
+          <div class="project-body">
+            <h3 class="project-title">DanixPOS</h3>
+            <p class="project-desc">An enterprise ERP and Point of Sale ecosystem built with Flutter. It features AES-256 SQLCipher database security, real-time LAN sync, and a background reporting engine.</p>
+            <ul class="project-tags">
+              <li class="tag">Flutter</li>
+              <li class="tag">Dart</li>
+              <li class="tag">SQLCipher</li>
+              <li class="tag">LAN Sync</li>
+            </ul>
+            <div class="project-links">
+              <span class="link-btn link-btn-private">Private repository</span>
+            </div>
+          </div>
+        </article>
+      </li>
+      <li class="project-card reveal" data-category="flutter">
+        <article>
+          <div class="project-thumb project-thumb-2" aria-hidden="true"><span class="project-badge">Flutter</span></div>
+          <div class="project-body">
+            <h3 class="project-title">RideHisab</h3>
+            <p class="project-desc">An offline-first finance tracker for rideshare drivers (inDrive, Uber, Yango). It logs rides, income, tips, expenses, and platform commissions locally with SQLite, shows day, week, and month dashboards, and offers optional Google Drive backup and restore.</p>
+            <ul class="project-tags">
+              <li class="tag">Flutter</li>
+              <li class="tag">Dart</li>
+              <li class="tag">SQLite</li>
+              <li class="tag">Provider</li>
+            </ul>
+            <div class="project-links">
+              <a href="https://github.com/mdanyal-khan/ride_hisab" class="link-btn link-btn-primary" target="_blank" rel="noopener noreferrer" aria-label="RideHisab on GitHub">GitHub</a>
+            </div>
+          </div>
+        </article>
+      </li>
+      <li class="project-card reveal" data-category="flutter">
+        <article>
+          <div class="project-thumb project-thumb-3" aria-hidden="true"><span class="project-badge">Flutter</span><span class="project-badge project-badge-private"><svg aria-hidden="true" focusable="false" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V7a4 4 0 018 0v4"/></svg>Private</span></div>
+          <div class="project-body">
+            <h3 class="project-title">HRMS N8N</h3>
+            <p class="project-desc">An adaptive Flutter and Dart client that recreates an HR automation platform across mobile, web, and desktop, integrated with Supabase for role-based (RBAC) authentication and database storage.</p>
+            <ul class="project-tags">
+              <li class="tag">Flutter</li>
+              <li class="tag">Dart</li>
+              <li class="tag">Supabase</li>
+              <li class="tag">RBAC</li>
+            </ul>
+            <div class="project-links">
+              <span class="link-btn link-btn-private">Private repository</span>
+            </div>
+          </div>
+        </article>
+      </li>
+      <li class="project-card reveal" data-category="ai">
+        <article>
+          <div class="project-thumb project-thumb-5" aria-hidden="true"><span class="project-badge">AI / Python</span></div>
+          <div class="project-body">
+            <h3 class="project-title">FindBack AI</h3>
+            <p class="project-desc">A Streamlit lost-and-found platform for campuses and organizations. Users report lost or found items and AI-powered semantic and rule-based similarity scoring suggests likely matches, with claim review, a handover workflow, and role-based access.</p>
+            <ul class="project-tags">
+              <li class="tag">Python</li>
+              <li class="tag">Streamlit</li>
+              <li class="tag">FAISS</li>
+              <li class="tag">PyTorch</li>
+              <li class="tag">SQLite</li>
+            </ul>
+            <div class="project-links">
+              <a href="https://github.com/mdanyal-khan/findbackAI" class="link-btn link-btn-primary" target="_blank" rel="noopener noreferrer" aria-label="FindBack AI on GitHub">GitHub</a>
+            </div>
+          </div>
+        </article>
+      </li>
+      <li class="project-card reveal" data-category="ai">
+        <article>
+          <div class="project-thumb project-thumb-6" aria-hidden="true"><span class="project-badge">AI / Python</span></div>
+          <div class="project-body">
+            <h3 class="project-title">Smart Document Analyzer</h3>
+            <p class="project-desc">A Streamlit app built on LangChain Expression Language and Groq's Llama 3.3 70B. Upload a PDF or TXT file and one parallel pipeline generates a summary, key points, keywords, a title, sentiment analysis, and an auto-scored quiz.</p>
+            <ul class="project-tags">
+              <li class="tag">Python</li>
+              <li class="tag">LangChain</li>
+              <li class="tag">Groq</li>
+              <li class="tag">Streamlit</li>
+            </ul>
+            <div class="project-links">
+              <a href="https://github.com/mdanyal-khan/smart_document_analyzer" class="link-btn link-btn-primary" target="_blank" rel="noopener noreferrer" aria-label="Smart Document Analyzer on GitHub">GitHub</a>
+            </div>
+          </div>
+        </article>
+      </li>
+      <li class="project-card reveal" data-category="ai">
+        <article>
+          <div class="project-thumb project-thumb-1" aria-hidden="true"><span class="project-badge">AI / Python</span></div>
+          <div class="project-body">
+            <h3 class="project-title">AI Chatbot</h3>
+            <p class="project-desc">A Streamlit chatbot built with LangChain and the Hugging Face Inference API, switchable between Qwen 2.5 (7B) and Llama 3.1 (8B). It supports streaming, conversation memory, adjustable generation settings, chat export, and clear error handling.</p>
+            <ul class="project-tags">
+              <li class="tag">Python</li>
+              <li class="tag">LangChain</li>
+              <li class="tag">Hugging Face</li>
+              <li class="tag">Streamlit</li>
+            </ul>
+            <div class="project-links">
+              <a href="https://github.com/mdanyal-khan/AI_Chatbot" class="link-btn link-btn-primary" target="_blank" rel="noopener noreferrer" aria-label="AI Chatbot on GitHub">GitHub</a>
+            </div>
+          </div>
+        </article>
+      </li>
+      <li class="project-card reveal" data-category="ai">
+        <article>
+          <div class="project-thumb project-thumb-2" aria-hidden="true"><span class="project-badge">AI / Python</span></div>
+          <div class="project-body">
+            <h3 class="project-title">Resume Info Extractor</h3>
+            <p class="project-desc">Extracts structured, schema-validated data from PDF resumes using Qwen2.5-7B-Instruct, LangChain, and Pydantic. It runs locally or through the Hugging Face Inference API and exports results as JSON, CSV, or a text report.</p>
+            <ul class="project-tags">
+              <li class="tag">Python</li>
+              <li class="tag">LangChain</li>
+              <li class="tag">Pydantic</li>
+              <li class="tag">Streamlit</li>
+            </ul>
+            <div class="project-links">
+              <a href="https://github.com/mdanyal-khan/resume_info_extractor" class="link-btn link-btn-primary" target="_blank" rel="noopener noreferrer" aria-label="Resume Info Extractor on GitHub">GitHub</a>
+            </div>
+          </div>
+        </article>
+      </li>
+      <li class="project-card reveal" data-category="web">
+        <article>
+          <div class="project-thumb project-thumb-3" aria-hidden="true"><span class="project-badge">Web</span></div>
+          <div class="project-body">
+            <h3 class="project-title">Portfolio Website</h3>
+            <p class="project-desc">The site you're on right now: a responsive single-page portfolio in plain HTML, CSS, and JavaScript with a dark/light theme, filterable project gallery, contact form, and SEO-ready structured data. No frameworks or build tools.</p>
+            <ul class="project-tags">
+              <li class="tag">HTML</li>
+              <li class="tag">CSS</li>
+              <li class="tag">JavaScript</li>
+            </ul>
+            <div class="project-links">
+              <a href="https://github.com/mdanyal-khan/Portfolio" class="link-btn link-btn-primary" target="_blank" rel="noopener noreferrer" aria-label="Portfolio Website on GitHub">GitHub</a>
+            </div>
+          </div>
+        </article>
+      </li>
+      <li class="project-card reveal" data-category="ai">
+        <article>
+          <div class="project-thumb project-thumb-4" aria-hidden="true"><span class="project-badge">AI / Python</span></div>
+          <div class="project-body">
+            <h3 class="project-title">PDF RAG Chatbot</h3>
+            <p class="project-desc">A Streamlit app to upload a PDF and ask questions about it. A LangChain RAG pipeline pairs local MiniLM sentence-transformer embeddings and a Chroma vector store with Qwen2.5-7B-Instruct served through Hugging Face.</p>
+            <ul class="project-tags">
+              <li class="tag">Python</li>
+              <li class="tag">LangChain</li>
+              <li class="tag">Chroma</li>
+              <li class="tag">RAG</li>
+            </ul>
+            <div class="project-links">
+              <a href="https://github.com/mdanyal-khan/simple_pdf_rag_chatbot" class="link-btn link-btn-primary" target="_blank" rel="noopener noreferrer" aria-label="PDF RAG Chatbot on GitHub">GitHub</a>
+            </div>
+          </div>
+        </article>
+      </li>
+      <li class="project-card reveal" data-category="flutter">
+        <article>
+          <div class="project-thumb project-thumb-5" role="img" aria-label="Task Manager App preview"><span class="project-badge">Flutter</span></div>
           <div class="project-body">
             <h3 class="project-title">Task Manager App</h3>
             <p class="project-desc">A Flutter mobile app for organizing daily tasks with reminders and categories, featuring an intuitive and user-friendly interface that allows users to create, edit, prioritize, and track tasks, set customizable reminders, manage multiple task categories, and stay organized to improve productivity and time management.</p>
@@ -491,15 +816,14 @@
               <li class="tag">Android Studio</li>
             </ul>
             <div class="project-links">
-              <a href="https://github.com/mdanyal-khan/Task_Management" class="link-btn" target="_blank" rel="noopener noreferrer">GitHub</a>
-              <a href="https://appetize.io/app/b_amg43ljqorc3zm7u4lqzclkdje" class="link-btn link-btn-primary" target="_blank" rel="noopener noreferrer">Live Demo</a>
+              <a href="https://github.com/mdanyal-khan/Task_Management" class="link-btn link-btn-primary" target="_blank" rel="noopener noreferrer">GitHub</a>
             </div>
           </div>
         </article>
       </li>
       <li class="project-card reveal" data-category="flutter">
         <article>
-          <div class="project-thumb project-thumb-5" role="img" aria-label="BMI Calculator App preview"></div>
+          <div class="project-thumb project-thumb-6" role="img" aria-label="BMI Calculator App preview"><span class="project-badge">Flutter</span></div>
           <div class="project-body">
             <h3 class="project-title">BMI Calculator App</h3>
             <p class="project-desc">
@@ -511,8 +835,7 @@
               <li class="tag">Android Studio</li>
             </ul>
             <div class="project-links">
-              <a href="https://github.com/mdanyal-khan/BMI_Calculator" class="link-btn" target="_blank" rel="noopener noreferrer">GitHub</a>
-              <a href="https://appetize.io/app/b_u7onetm3iby3sy3gdoblnml5pi" class="link-btn link-btn-primary" target="_blank" rel="noopener noreferrer">Live Demo</a>
+              <a href="https://github.com/mdanyal-khan/BMI_Calculator" class="link-btn link-btn-primary" target="_blank" rel="noopener noreferrer">GitHub</a>
             </div>
           </div>
         </article>
@@ -522,7 +845,7 @@
 </section>
 
 <!-- Services Section -->
-<section id="services" class="section">
+<section id="services" class="section section-alt">
   <div class="section-inner">
     <div class="section-header reveal">
       <span class="eyebrow">How I Can Help</span>
@@ -708,7 +1031,7 @@
         </svg>
       </a></li>
     </ul>
-    <p class="footer-copyright">© 2026 Muhammad Danyal Khan. All rights reserved. &nbsp;·&nbsp; Last updated <time datetime="2026-07-14">July 2026</time></p>
+    <p class="footer-copyright">© 2026 Muhammad Danyal Khan. All rights reserved. &nbsp;·&nbsp; Last updated <time datetime="2026-09-19">September 2026</time></p>
   </div>
   <button class="back-to-top" id="backToTop" aria-label="Back to top">
     <svg aria-hidden="true" focusable="false" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
